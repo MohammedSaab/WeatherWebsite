@@ -1,0 +1,25 @@
+<!-- form.html --> <!--Data Collecting-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class = 'background'>
+        <div class = 'container'>
+            <img src= "https://15logo.net/beta/wp-content/uploads/2017/04/Weather-Report-800x800.jpg" alt="Weather Logo" style="width: 450px; height: auto; position: relative; left: 20px;" >
+
+            <div class="form-container">
+                <form method="post">
+            <!-- <label style="font-family: Georgia, 'Times New Roman', Times, serif;" for="city">Enter a City:</label> -->
+                    <input type="text" id="city" name="city" placeholder=" Enter a City" size="40" required>
+                    <button class="button-29" type="submit">Get Weather</button>
+                </form>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>     

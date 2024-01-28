@@ -1,0 +1,185 @@
+/* styles.css */
+
+body {
+  margin: 0;
+}
+
+.background {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#b6c6f9 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #b6c6f9 2px, #e5e5f7 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  z-index: -1;
+}
+input[type=text] {
+  width: 100; /* Set your desired initial width */
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  background-color: white;
+  opacity: 1;
+  width: 25%;
+  height: 75%;
+  background-color: white;
+  border-radius: 1rem;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow property */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.card {
+  margin: 0;
+  background-color: white;
+  opacity: 1;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 1rem;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow property */
+}
+
+  
+
+/* Form.html CSS*/
+button:hover {
+  background-color: orange; 
+  box-shadow: 3px 3px 5px grey;
+}
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+form {
+  text-align: center;
+}
+
+label { 
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.button-29 {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-29:hover {
+  background-color: #45a049;
+}
+
+
+.button-three {
+  position: relative;
+  background-color: #7393B3;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-three:hover{
+ background:#fff;
+ box-shadow:0px 2px 10px 5px #97B1BF;
+ color:#000;
+}
+
+.button-three:after {
+  content: "";
+  background: #f1c40f;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 0%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button-three:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body> 
+    <button class="button-three" onclick="history.back()">Search Again</button>
+        <div class="background">
+        <div class="card">
+            {% if city and temperature_fahrenheit %}
+                <h1>Weather in {{ city }}</h1>
+                <p>Temperature: {{ temperature_fahrenheit }} °F</p> 
+                <p>Sky: {{ sky_condition }}</p>
+                <p>Humidity: {{ humidity }}%</p>
+            {% endif %}
+
+            <!-- Display forecast data for the next 4 days with humidity -->
+            {% if forecast_data %}
+                <h2>Weather Forecast for the Next 4 Days</h2>
+                {% for forecast in forecast_data %}
+                    <p>Date: {{ forecast.date }} - Temperature: {{ forecast.temperature }}°F, Sky: {{ forecast.description }}, Humidity: {{ forecast.humidity }}%</p>
+                {% endfor %}
+            {% endif %}
+
+        </div>  
+    </div>
+    
+</body>
+
+</html>
